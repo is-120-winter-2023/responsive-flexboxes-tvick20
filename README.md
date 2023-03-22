@@ -1,5 +1,7 @@
 <!-- cSpell:enable  -->
 
+My Responsive flexboxes website is contained in this repo!
+
 # Responsive flexboxes
 
 **Objectives**: Learn how to use flexbox and media queries to create responsive layouts.
@@ -8,7 +10,7 @@
 
 In this assignment you will add flexboxes to your `<body>` element, hero overlay, menu, articles, and cards using mobile-first design and media queries.
 
-| ⚠️  This assignment builds on your _Overlays and cards_ assignment                                                                                                                                                                                                                                                                                                                                                                               |
+| ⚠️ This assignment builds on your _Overlays and cards_ assignment                                                                                                                                                                                                                                                                                                                                                                                      |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | After cloning this repo and opening it in VSCode, copy the following files and folders from your _Overlays and cards_ assignment into this repo.<br><br><ul><li>📄 index.html</li><li>📄 favicon.ico</li><li>📁styles</li><li>📁images</li><li>📁about</li><li>📁contact</li></ul><br>**Make sure that you don't copy any other folders or files, including the `test` folder, the hidden `.git` and `.github` folders, and the `package.json` files** |
 
@@ -20,12 +22,12 @@ One of the main reasons to use the mobile-first design strategy is that the mobi
 
 When writing media queries, remember that they are overriding previous CSS, so you need to place them _after_ the CSS that they are overriding.
 
-| 💡 Media queries and specificity |
-|:---|
+| 💡 Media queries and specificity                                                                                                        |
+| :-------------------------------------------------------------------------------------------------------------------------------------- |
 | I recommend placing all media queries at the end of your CSS file so they are sure to override previous CSS, and they are easy to find. |
 
-| 💡 Learn more about mobile-first design |
-|:---|
+| 💡 Learn more about mobile-first design                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Review CSS Trick's [How to Develop and Test a Mobile-First Design in 2021](https://css-tricks.com/how-to-develop-and-test-a-mobile-first-design-in-2021/) &ndash; _you can skip the end of the article when it describes testing, that's beyond the scope of this class_. For more design tips see Adobe Xd's [Mobile First Design Strategy: The When, Why and How](https://xd.adobe.com/ideas/process/ui-design/what-is-mobile-first-design/). Pay particular attention to the concepts of _progressive advancement_ and _graceful degredation_ |
 
 ### Determining breakpoints
@@ -89,9 +91,9 @@ main {
 }
 ```
 
-| ⚠️ **Remove all _old-school_ centering CSS** |
-| :--- |
-| If you used `margin: 0 auto` or the more exotic  `transform: translate(-50%, -50%);` to center any elements, remove them. If you used `float`, no judgement, just quietly remove any `float` declarations.  Also remove any margins or paddings that you were using to center elements. Flexbox will make your layout much easier.|
+| ⚠️ **Remove all _old-school_ centering CSS**                                                                                                                                                                                                                                                                                     |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| If you used `margin: 0 auto` or the more exotic `transform: translate(-50%, -50%);` to center any elements, remove them. If you used `float`, no judgement, just quietly remove any `float` declarations. Also remove any margins or paddings that you were using to center elements. Flexbox will make your layout much easier. |
 
 ## Hero image overlay
 
@@ -125,7 +127,7 @@ Find two images to accompany your articles. You can use the same images that you
 
 #### Why 600px wide?
 
-You want to use the smallest image size possible for your article images. If your `<main>` element is set to `max-width: 70rem`, that's a default of `70 x 16px` or `1120px` wide. Depending on your design, let's say your image will take up at most 50% of that width. So your article images should have a physical width of 560px, and I rounded it up to 600px. Don't forget to add HTML `height` and `width` attributes.  You may need different widths for your images, so this is not set in stone. You may need to do some math on your own to determine the best image size for your design.
+You want to use the smallest image size possible for your article images. If your `<main>` element is set to `max-width: 70rem`, that's a default of `70 x 16px` or `1120px` wide. Depending on your design, let's say your image will take up at most 50% of that width. So your article images should have a physical width of 560px, and I rounded it up to 600px. Don't forget to add HTML `height` and `width` attributes. You may need different widths for your images, so this is not set in stone. You may need to do some math on your own to determine the best image size for your design.
 
 _I am simplifying here, and not taking device pixel ratios into account and I'm ignoring the fact that some users increase their base font size. If you were looking at device pixel ratios, you would need a max-width of 1120px for devices with a pixel ratio of 2, and 2240px for devices with a pixel ratio of 3. You could use an `<img>` with `srcset` to provide different image sizes for different devices pixel ratios, but that's beyond the scope of this assignment._
 
@@ -268,6 +270,7 @@ Pretests (41):
   - about page includes an `<img>` element that uses `srcset` and `sizes` to load three versions of the same image with different widths
   - contact page loads an SVG file with `<img>`
 - MAIN index.html ONLY
+
   - main index.html must contain a `<picture>`, one `<main>`, at least two `<article>`, an `<aside>`, and a `<footer>`
   - `<article>` must contain an `<h2>` and at least one `<p>`
   - `<div class="hero">` contains an `<h1>` and a `<p>`
