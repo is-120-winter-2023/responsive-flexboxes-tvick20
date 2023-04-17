@@ -128,7 +128,7 @@ p {
 
 article,
 aside {
-  margin-bottom: 5rem;
+  padding: 50px 100px;
 }
 
 a {
@@ -169,7 +169,7 @@ a.button {
   color: var(--dark-blue);
 }
 
-main {
+.shoebill {
   align-self: center;
   padding: 0 var(--gutter);
   padding: 0 1rem;
@@ -186,6 +186,7 @@ footer {
 
 footer p {
   margin: 0;
+  text-align: center;
 }
 
 .hero {
@@ -347,6 +348,42 @@ footer p {
   color: white;
   padding: 1rem;
   font-size: 2rem;
+}
+
+/* Page 2 */
+.scroller > *:nth-child(5n + 1) {
+  background-color: #ede849;
+}
+.scroller > *:nth-child(5n + 2) {
+  background-color: #35cb6e;
+}
+.scroller > *:nth-child(5n + 3) {
+  background-color: #e12599;
+}
+.scroller > *:nth-child(5n + 4) {
+  background-color: #ccd4dc;
+}
+.scroller > * {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  color: #fff;
+  height: var(--slide-height);
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html {
+  --slide-height: 100vh;
+  --slider-height: 100%;
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-rows: 100vh;
+  grid-auto-flow: row;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 }
 
 @media (min-width: 500px) {
