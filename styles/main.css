@@ -369,7 +369,14 @@ footer p {
   color: #fff;
   height: var(--slide-height);
 }
-
+.second_page nav a {
+  position: fixed;
+  top: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: var(--half-gap) var(--gutter);
+  padding: 1rem;
+}
 article {
   display: flex;
   align-items: center;
@@ -425,7 +432,7 @@ html {
     justify-content: space-around;
   }
 
-  header nav a {
+  .first_page nav a {
     position: relative;
     display: inline-block;
     text-transform: uppercase;
